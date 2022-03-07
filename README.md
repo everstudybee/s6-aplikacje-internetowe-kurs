@@ -16,6 +16,9 @@ Opis: Semestr 6, mgr Artur Kornatka
 ## Dokumentacja
 
 1. [Strona z dokumentacją ASV.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
+2. [Material Design - strona projektu](https://material.io/)
+   1. [Material Design - Web Develop](https://material.io/develop/web)
+3. [Mateerialize - CSS framework oparty na Material Design](https://materializecss.com/)
 
 ## bn1-proste-przyklady
 
@@ -51,3 +54,16 @@ Opis: Semestr 6, mgr Artur Kornatka
    - `Views > Shared > _Layout.cshtml` - szablon domyślny dla wszystkich stron
    - `wwwroot > css > site.css` - główny plik styli CSS
    - `Controllers > HomeController.cs > funkcja Index()` - główny kontroler sterujący widokiem `Index.cshtml`
+
+
+## bm1-aplikacja-od-poczatku
+
+#### feat: przygotuj nowa solucje z projektami
+
+1. Dodaj do projektu `Blank Solution` - solucja to zbiór projektów
+2. Dodaj nowy projekt `ASP.NET Core Web App (Model-VIew-Controller)` - nazwa `Firma.PortalWWW`
+   1. Projekt ten jest aplikacją internetową dedykowaną klientom
+3. Dodaj nowy projekt `ASP.NET Core Web App (Model-VIew-Controller)` - nazwa `Firma.Intranet`
+   1. Projekt ten jest aplikacją internetową dedykowaną pracownikom
+4. `PPM na Firma.Intranet > Set as Startup Project` - ustaw `Firma.Intranet` jako projekt startowy
+   1. Nazwa aktywnego projektu będzie pogrubiona w Solution Explor
