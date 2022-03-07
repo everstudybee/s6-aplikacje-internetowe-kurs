@@ -88,6 +88,22 @@ Opis: Semestr 6, mgr Artur Kornatka
 1. Pobierz framework materializecss (link u góry w Dokumentacji)
 2. Ustaw projekt Firma.PortalWWW jako Startup Project
 3. Przeciągnij rozpakowany folder `materialize` do `Firma.PortalWWW > wwwroot > lib`
-4. Pobierz wybrany template materialize np. [Starter Template](https://materializecss.com/getting-started.html)
-5. Edytuj `Frima.PortalWWW > Shared > _Layout.cshtml` i przekopiuj odpowiednie fragmenty z `template > index.html`
-   1. 
+
+#### feat: podepnij _Layout.cshtml do materialize
+
+1. Pobierz wybrany template materialize np. [Starter Template](https://materializecss.com/getting-started.html)
+2. Edytuj `Frima.PortalWWW > Shared > _Layout.cshtml` i przekopiuj odpowiednie fragmenty z `template > index.html`
+   1. `head` integruj style css potrzebne do działania template. Zweryfikować dodatkowe pliki z dedykowanym CSS
+      1. Dodaj dodatkowy kod CSS do `Firma.PortalWWW > wwwroot > lib > css > site.css`
+   2. `body` integruj zawartość template strony
+   3. `script` integruj odpowiednie skrypty potrzebne do działania template
+        1. Dodaj odpowiednią wersję jQuery do `Firma.PortalWWW > wwwroot > lib > jquery > dist`
+        2. Dodaj dodatkowy kod JavaScript do `Firma.PortalWWW > wwwroot > lib > js > site.js`
+   4. W pliku `_Layout.cshtml` w miejscu w którym ma się wklejać renderowana treść strony dodaj linijkę `@RenderBody()`
+3. Edytuj plik `FirmaPortalWWW > Views > Home > Index.cshtml` i dodaj odpowiednią treść strony `Home` z uwzględnieniem nowych klas CSS z materialize
+4. Usuń nieużywane przez template skrypty z `Firma.PortalWWW > wwwroot > lib`
+    1. Bootstrap
+    2. jquery-validation
+    3. jquery-validation-unobtrusive
+    4. `_ValidationScriptsPartial.cshtml` z `Firma.PortalWWW > Views > Shared`
+    5. Trzeba zrestartować program, bo są wyrzucane błędy
