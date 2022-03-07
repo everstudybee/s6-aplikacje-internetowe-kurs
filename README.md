@@ -15,10 +15,25 @@ Opis: Semestr 6, mgr Artur Kornatka
 
 ## Dokumentacja
 
+#### Git, wersjonowanie i tagowanie
+
+1. [Kurs Git'a [PL]](https://youtube.com/playlist?list=PLj-pbEqbjo6AKsJ8oE2pvIqsb15mxdrxs)
+2. [Conventional Commits - Nazewnictwo commitów w Git](https://www.conventionalcommits.org/en/v1.0.0/)
+3. [Semantic Versioning - Numerowanie wersji](https://semver.org/)
+4. [Tagowanie - Git, Releases - GitHub](https://youtu.be/Wq_zrz7jV80)
+
+#### Frameworki CSS
+
 1. [Strona z dokumentacją ASV.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
 2. [Material Design - strona projektu](https://material.io/)
    1. [Material Design - Web Develop](https://material.io/develop/web)
-3. [Mateerialize - CSS framework oparty na Material Design](https://materializecss.com/)
+   2. [Mateerialize - CSS framework oparty na Material Design](https://materializecss.com/)
+3. [Bootstrap](https://getbootstrap.com/)
+4. [Material Design for Bootstrap v5 & v4](https://mdbootstrap.com/)
+5. [Pure.CSS - lekki framework CSS](https://purecss.io/)
+6. Przegląd frameworków
+   1. [9 Best CSS Frameworks in 2022](https://athemes.com/collections/best-css-frameworks/)
+   2. [20 Best Material Design CSS Frameworks for Websites](https://superdevresources.com/material-design-web-ui-frameworks/)
 
 ## bn1-proste-przyklady
 
@@ -67,3 +82,12 @@ Opis: Semestr 6, mgr Artur Kornatka
    1. Projekt ten jest aplikacją internetową dedykowaną pracownikom
 4. `PPM na Firma.Intranet > Set as Startup Project` - ustaw `Firma.Intranet` jako projekt startowy
    1. Nazwa aktywnego projektu będzie pogrubiona w Solution Explor
+
+#### feat: zintegruj materializecss z Firma.PortalWWW
+
+1. Pobierz framework materializecss (link u góry w Dokumentacji)
+2. Ustaw projekt Firma.PortalWWW jako Startup Project
+3. Przeciągnij rozpakowany folder `materialize` do `Firma.PortalWWW > wwwroot > lib`
+4. Pobierz wybrany template materialize np. [Starter Template](https://materializecss.com/getting-started.html)
+5. Edytuj `Frima.PortalWWW > Shared > _Layout.cshtml` i przekopiuj odpowiednie fragmenty z `template > index.html`
+   1. 
