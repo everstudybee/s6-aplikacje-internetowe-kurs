@@ -35,6 +35,11 @@ Opis: Semestr 6, mgr Artur Kornatka
    1. [9 Best CSS Frameworks in 2022](https://athemes.com/collections/best-css-frameworks/)
    2. [20 Best Material Design CSS Frameworks for Websites](https://superdevresources.com/material-design-web-ui-frameworks/)
 
+#### Data Annotations
+
+1. [Part 6: Using Data Annotations for Model Validation](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6)
+2. [Model Validation Using Data Annotations In ASP.NET MVC](https://www.c-sharpcorner.com/article/model-validation-using-data-annotations-in-asp-net-mvc/)
+
 ## bn1-proste-przyklady
 
 #### Znaczniki html w ASP.NET Core
@@ -122,8 +127,29 @@ Opis: Semestr 6, mgr Artur Kornatka
 3. Edytuj wszystkie dodane strony i utwórz ich treść wzorując się na `Index.cshtml`
 4. Edytuj `_Layout.cshtml` i w sekcji nawigacji dodaj linki do dodanych stron zgodnie z procedurą z poprzedniego commitu
 
-#### feat: dodaj przykladowe komponenty materialize oraz zmien kolory
+#### feat: dodaj przykladowe komponenty materialize
 
 1. Dodaj `Fixed Navbar` do `_Layout.cshtml` [Fixed Navbar](https://materializecss.com/navbar.html)
-2. Dodaj `Card Panel` do `.cshtml` [Fixed Navbar](https://materializecss.com/navbar.html)
-3. Dodaj `Fixed Navbar` do `_Layout.cshtml` [Fixed Navbar](https://materializecss.com/navbar.html)
+2. Dodaj `Card Panel` do `About.cshtml` [Card Panel](https://materializecss.com/cards.html)
+3. Dodaj `FABs in Cards` do `Privacy.cshtml` [Card Panel](https://materializecss.com/cards.html)
+4. Dodaj `Card Reveal` do `Contact.cshtml` [Card Panel](https://materializecss.com/cards.html)
+
+#### feat: dodaj do Firma.Intranet możliwość sterowania treścią portalu
+
+1. Ustaw jako aktywny projekt `Frima.Intranet`
+2. Utwórz folder `CMS` w folderze `Models`
+3. Utwórz w folderze `CMS` klasę o nazwie `Strona.cs`
+4. Dodaj do klasy `Strona.cs` properies, które będą odpowiedzialne za elementy strony
+   1. `IdStrony` - identyfikator strony w bazie danych
+   2. `LinkTytul` - anchor text linku do strony
+   3. `Tytul` - tytuł strony, może też być w treści
+   4. `Tresc` - treść strony z całym html
+   5. `Pozycja` - pozycja strony w menu
+5. Dodaj do każdego properties `annotations`, które odpowiadają za konfigurację bazy danych. Linki do dokumentacji w sekcji `Dokumentacja > Data Annotations`
+   1. `[Key]` - klucz główny w bazie danych
+   2. `[Required]` - oznacza, że pole jest wymagane
+      - `[Required(ErrorMessage = "Wpisz tytuł donośnika")]` - komunikat błędu, w domyślnym szablonie wyświetla się pod danym elementem w formularzu
+   3. `[MaxLength]` - maksymalna długość pola
+      - `[MaxLength(10, ErrorMessage = "Tytuł powinien zawierać max. 10 znaków")]` - weryfikuje, czy wpisany tekst nie jest dłuższy niż 10 znaków i ewentualnie wyświetla odpowiedni komunikat
+   4. `[Display]` - podczas wyswietlania zamienia nazwe properties na podany string. Nazwa properties jest taka sama jak nazwa kolumny w bazie danych i nie powinna zawierać polskich znaków.
+      - `[Display(Name = "Tytuł odnośnika")]` - podany string zamienia nazwę properties
