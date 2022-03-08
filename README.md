@@ -114,3 +114,10 @@ Opis: Semestr 6, mgr Artur Kornatka
    1. `Prywatność` - anchor text `linkText`
    2. `Privacy` - nazwa funkcji wyświetlającej daną stronę w kontrolerze `actionName`
    3. `Home` - nazwa kontrolera `controllerName`
+
+#### feat: dodaj nowy widok do projektu
+
+1. W pliku `HomeController.cs` dodaj funkcję o nazwie takiej jak nowy widok np. About
+2. `PPM > na funkcję About > Add View > Razor View - Empty` i nadajemy nazwę About. W folderze `Home` pojawi się nowy plik About.cshtml
+3. Edytuj wszystkie dodane strony i utwórz ich treść wzorując się na `Index.cshtml`
+4. Edytuj `_Layout.cshtml` i w sekcji nawigacji dodaj linki do dodanych stron zgodnie z procedurą z poprzedniego commitu
