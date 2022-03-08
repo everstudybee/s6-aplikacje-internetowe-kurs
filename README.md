@@ -89,7 +89,7 @@ Opis: Semestr 6, mgr Artur Kornatka
 2. Ustaw projekt Firma.PortalWWW jako Startup Project
 3. Przeciągnij rozpakowany folder `materialize` do `Firma.PortalWWW > wwwroot > lib`
 
-#### feat: podepnij _Layout.cshtml do materialize
+#### feat: podepnij _Layout.cshtml do materialize i uaktualnij biblioteki
 
 1. Pobierz wybrany template materialize np. [Starter Template](https://materializecss.com/getting-started.html)
 2. Edytuj `Frima.PortalWWW > Shared > _Layout.cshtml` i przekopiuj odpowiednie fragmenty z `template > index.html`
@@ -107,3 +107,10 @@ Opis: Semestr 6, mgr Artur Kornatka
     3. jquery-validation-unobtrusive
     4. `_ValidationScriptsPartial.cshtml` z `Firma.PortalWWW > Views > Shared`
     5. Trzeba zrestartować program, bo są wyrzucane błędy
+
+#### feat: dodaj linki w menu w _Layout.cshtml
+
+1. Tworzenie linku do strony `@Html.ActionLink("Prywatność","Privacy","Home")`
+   1. `Prywatność` - anchor text `linkText`
+   2. `Privacy` - nazwa funkcji wyświetlającej daną stronę w kontrolerze `actionName`
+   3. `Home` - nazwa kontrolera `controllerName`
