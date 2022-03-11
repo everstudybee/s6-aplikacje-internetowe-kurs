@@ -40,6 +40,11 @@ Opis: Semestr 6, mgr Artur Kornatka
 1. [Part 6: Using Data Annotations for Model Validation](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6)
 2. [Model Validation Using Data Annotations In ASP.NET MVC](https://www.c-sharpcorner.com/article/model-validation-using-data-annotations-in-asp-net-mvc/)
 
+#### Mircrosoft Dokumentacja
+
+1. [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
+2. [ASP.NET documentation](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
+
 ## bn1-proste-przyklady
 
 #### Znaczniki html w ASP.NET Core
@@ -134,7 +139,7 @@ Opis: Semestr 6, mgr Artur Kornatka
 3. Dodaj `FABs in Cards` do `Privacy.cshtml` [Card Panel](https://materializecss.com/cards.html)
 4. Dodaj `Card Reveal` do `Contact.cshtml` [Card Panel](https://materializecss.com/cards.html)
 
-#### feat: dodaj do Firma.Intranet możliwość sterowania treścią portalu
+#### feat: dodaj do Firma.Intranet mozliwosc sterowania trescia portalu
 
 1. Ustaw jako aktywny projekt `Frima.Intranet`
 2. Utwórz folder `CMS` w folderze `Models`
