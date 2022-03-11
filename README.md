@@ -43,6 +43,7 @@ Opis: Semestr 6, mgr Artur Kornatka
 #### Mircrosoft Dokumentacja
 
 1. [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
+2. [Entity Properties](https://docs.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwithout-nrt)
 2. [ASP.NET documentation](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
 
 ## bn1-proste-przyklady
@@ -139,6 +140,8 @@ Opis: Semestr 6, mgr Artur Kornatka
 3. Dodaj `FABs in Cards` do `Privacy.cshtml` [Card Panel](https://materializecss.com/cards.html)
 4. Dodaj `Card Reveal` do `Contact.cshtml` [Card Panel](https://materializecss.com/cards.html)
 
+## bm2-prosty-cms
+
 #### feat: dodaj do Firma.Intranet mozliwosc sterowania trescia portalu
 
 1. Ustaw jako aktywny projekt `Frima.Intranet`
@@ -158,3 +161,5 @@ Opis: Semestr 6, mgr Artur Kornatka
       - `[MaxLength(10, ErrorMessage = "Tytuł powinien zawierać max. 10 znaków")]` - weryfikuje, czy wpisany tekst nie jest dłuższy niż 10 znaków i ewentualnie wyświetla odpowiedni komunikat
    4. `[Display]` - podczas wyswietlania zamienia nazwe properties na podany string. Nazwa properties jest taka sama jak nazwa kolumny w bazie danych i nie powinna zawierać polskich znaków.
       - `[Display(Name = "Tytuł odnośnika")]` - podany string zamienia nazwę properties
+   5. `[Column]` - decydujemy, że w bazie danych ten properties będzie typu nvarchar(MAX)
+   6. 
