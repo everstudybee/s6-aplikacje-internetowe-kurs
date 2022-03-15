@@ -25,5 +25,15 @@ namespace Firma.Intranet.Models.CMS
         [Required(ErrorMessage = "Pozycja jest wymagana")]
         [Display(Name = "Pozycja wyświetlania")]
         public int Pozycja { get; set; }
+
+        // Pola dodatkowe, które powinny być w każdym projekcie
+        // Można to zrobić na zasadzie dziedziczenia z klasy Record
+        //    - Kto dodał
+        //    - Kiedy dodał
+        //    - Kto zmodyfikował
+        //    - Kiedy zmodyfikował
+        //    - Kto usunął
+        //    - Kiedy usunął
+        //    - Czy aktywny
     }
 }
