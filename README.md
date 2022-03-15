@@ -46,6 +46,15 @@ Opis: Semestr 6, mgr Artur Kornatka
 2. [Entity Properties](https://docs.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwithout-nrt)
 2. [ASP.NET documentation](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
 
+#### Code-first
+
+Podejście do tworzenia bazy danych
+
+1. [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
+2. [Tutorial: Code First Approach in ASP.NET Core MVC with EF](https://medium.com/c-sharp-progarmming/tutorial-code-first-approach-in-asp-net-core-mvc-with-ef-5baf5af696e9)
+2. [Development Approaches with Entity Framework](https://www.javatpoint.com/development-approaches-with-entity-framework)
+2. [Code-First Approach With ASP.NET MVC Framework](https://www.c-sharpcorner.com/article/code-first-approach-with-asp-net-mvc-framework/)
+
 ## bn1-proste-przyklady
 
 #### Znaczniki html w ASP.NET Core
@@ -142,7 +151,9 @@ Opis: Semestr 6, mgr Artur Kornatka
 
 ## bm2-prosty-cms
 
-#### feat: dodaj do Firma.Intranet mozliwosc sterowania trescia portalu
+Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dziale [dokumentacja](#code-first).
+
+#### feat: dodaj do strona.cs properies oraz annotations
 
 1. Ustaw jako aktywny projekt `Frima.Intranet`
 2. Utwórz folder `CMS` w folderze `Models`
@@ -159,7 +170,14 @@ Opis: Semestr 6, mgr Artur Kornatka
       - `[Required(ErrorMessage = "Wpisz tytuł donośnika")]` - komunikat błędu, w domyślnym szablonie wyświetla się pod danym elementem w formularzu
    3. `[MaxLength]` - maksymalna długość pola
       - `[MaxLength(10, ErrorMessage = "Tytuł powinien zawierać max. 10 znaków")]` - weryfikuje, czy wpisany tekst nie jest dłuższy niż 10 znaków i ewentualnie wyświetla odpowiedni komunikat
-   4. `[Display]` - podczas wyswietlania zamienia nazwe properties na podany string. Nazwa properties jest taka sama jak nazwa kolumny w bazie danych i nie powinna zawierać polskich znaków.
+   4. `[Display]` - podczas wyswietlania zamienia nazwę properties na podany string. Nazwa properties jest taka sama jak nazwa kolumny w bazie danych i nie powinna zawierać polskich znaków. Używamy gdy nazwa pola jest inna niż wyświetlana
       - `[Display(Name = "Tytuł odnośnika")]` - podany string zamienia nazwę properties
    5. `[Column]` - decydujemy, że w bazie danych ten properties będzie typu nvarchar(MAX)
-   6. 
+
+#### feat: dodaj klasy Aktualnosc.cs oraz Parametr.cs
+
+1. Klasy tworzymy analogicznie do klasy Strona.cs
+2. Tabala parametry będzie służyła do przechowywania pojedynczych tekstów na stronie
+3. W projekcie może być kilka tabel z parametrami np. parametry ogólne, parametry finansowe i w każdym module aplikacji może być oddzielna tabela. Każdy projekt może mieć wtedy oddzielną tabelę parametry + parametry ogólne np. z nazwą firmy, adresem itd.
+4. Innym sposobem podejścia może być jedna tabela parametry z dodatkowym polem, gdzie dodamy informacje, gdzie ten parametr zostanie wykorzystany.
+5. Na koniec kompilujemy projekt.
