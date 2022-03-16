@@ -181,3 +181,11 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 3. W projekcie może być kilka tabel z parametrami np. parametry ogólne, parametry finansowe i w każdym module aplikacji może być oddzielna tabela. Każdy projekt może mieć wtedy oddzielną tabelę parametry + parametry ogólne np. z nazwą firmy, adresem itd.
 4. Innym sposobem podejścia może być jedna tabela parametry z dodatkowym polem, gdzie dodamy informacje, gdzie ten parametr zostanie wykorzystany.
 5. Na koniec kompilujemy projekt.
+
+#### feat: utwórz kontrolery i bazę danych
+
+1.`PPM > Controllers > Add > Controller > MVC Controller with views, using Entity Framework`
+   1. `Model class` - `Aktualnosc (Frima.Intranet.Model.CMS)`
+   2. `Data context class` - dodajemy plusem i `New data context type` - `Frma.Intranet.Data.FirmaIntranetContext` - tworzy się automatycznie
+   3. `Views` - wszystko zostawione domyślnie, czyli pola wyboru 3x zaznazone i pusty input pod spodem
+   4. `Controller name` - `AktualnoscController` bez "s", ale nazwa dowolna. "s" dodawane jest automatycznie by podreślić liczbę mnogą w ankielskim.
