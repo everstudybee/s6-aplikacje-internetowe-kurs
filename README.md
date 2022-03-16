@@ -235,3 +235,16 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 4. Ustaw odpowiedni projekt w konsoli
 5. `Add-Migration InitialCreate` - podajemy to polecenie w konsoli dla wybranego projektu
 6. Zostanie utworzony plik migracyjny
+
+#### feat: utworz baze danych dla projektu Firma.Intranet
+
+1. `Tools > NuGet Package Manager > Package Manager Console` - wejdź do konsoli
+2. Ustaw odpowiedni projekt w konsoli
+3. `Update-Database -verbose` - tworzymy bazę danych, -verbose powoduje, że w konsoli wyświetla się cały SQL przesyłany do bazy
+4. `folder projektu > docs > Frima.Intranet upadate-database -verbose.md` - pełen output po wykonaniu powyższej komendy.
+5. `View > SQL Server Object Explorer` - można zobaczyć wszystkie lokalne bazy danych
+6. W pliku `appsettings.json` możemy podejrzeć nazwę naszej bazy danych
+7. `PPM > Wybrana tabela > View Data` - mozna podejrzeć dane tak jak w SSMS
+8. Do lokalnej bazy danych można się też dostać za pomocą SSMS, ale nie przerabialiśmy tego
+9. Można też eksportować bazę danych z `SQL Server Object Explorer (SSOE)` do `SQL Server Managment Studio (SSMS)`
+10. `C:\Users\<użytkownik>\<baza>.mdf` - (SQL Server Database Primary Data File) plik do lokalnej bazy danych. Plik `<baza>.ldf` (SQL Server Database Transaction Log File) 
