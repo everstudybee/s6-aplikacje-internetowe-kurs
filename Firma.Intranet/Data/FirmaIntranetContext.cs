@@ -16,5 +16,7 @@ namespace Firma.Intranet.Data
         }
 
         public DbSet<Firma.Intranet.Models.CMS.Aktualnosc> Aktualnosc { get; set; }
+
+        public DbSet<Firma.Intranet.Models.CMS.Strona> Strona { get; set; }
     }
 }

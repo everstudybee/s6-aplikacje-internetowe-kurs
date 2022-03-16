@@ -191,3 +191,13 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
    4. `Controller name` - `AktualnoscController` bez "s", ale nazwa dowolna. "s" dodawane jest automatycznie by podreślić liczbę mnogą w ankielskim.
 2. `Views > Aktualnosc` - Widoki należy robić dedykowane i zmienić kod wygenerowany automatycznie
 3. Zalecane jest w AktualnoscController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBaseController
+
+#### feat: utworz kontrolery klas Strona.cs
+
+1. 1.`PPM > Controllers > Add > Controller > MVC Controller with views, using Entity Framework`
+   1. `Model class` - `Aktualnosc (Frima.Intranet.Model.CMS)`
+   2. `Data context class` - jeśli dodaliśmy już wcześniej contex `Frma.Intranet.Data.FirmaIntranetContext` to nie dodajemy po raz drugi, ponieważ utworzyło by się drugie połączenie do bazy
+   3. `Views` - wszystko zostawione domyślnie, czyli pola wyboru 3x zaznazone i pusty input pod spodem
+   4. `Controller name` - `AktualnoscController` bez "s", ale nazwa dowolna. "s" dodawane jest automatycznie by podreślić liczbę mnogą w ankielskim.
+2. `Views > Nazwa kontrolera` - Widoki należy robić dedykowane i zmienić kod wygenerowany automatycznie
+3. Zalecane jest w NazwaKontroleraController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBaseController
