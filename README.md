@@ -212,16 +212,6 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 2. `Views > Nazwa kontrolera` - Widoki należy robić dedykowane i zmienić kod wygenerowany automatycznie
 3. Zalecane jest w NazwaKontroleraController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBasebontroller
 
-#### docs: dodaj informacje o mozliwych ulepszeniach kodu w README.md
-
-1. Mrówki generują bardzo dużo powtarzalnego kodu
-2. Najlepiej byłoby stworzyć DatabaseController, z którego mogą dziedziczyć pozostałem kontrolery i cały dublujący się kod we wszystkich kontrolerach będzie tam.
-3. Odpowiednikami  kontrolerów w desktopach są ViewModels w internetowych
-4. W internetowych jeden kontroler odpowiada za wiele widoków, każda funkcja i przycisk to inny widok
-5. Można też zastosować pewne dziedziczenia na Views, jeśli będą wspólne elementy.
-6. Można też pójść w kierunku, że jeden Views wyświetla dowolne źródło danych, czyli wszystkie widoki. Toki wspólny widok można użyć do tabel słownikowych.
-7. W widokach generowanych automatycznie można zastosować gotowe kontrolki, które będą o wiele ciekawsze niż te defaultowe np. do wyświetlania list.
-
 #### feat: dodaj linki do nowych stron do pliku _Layout.cshtml
 
 1. `Views > Shared > _Layout.cshtml` - zmieniamy sekcję nawigacyjną strony by dodać linki do utworzonych wcześniej widoków
@@ -247,4 +237,61 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 7. `PPM > Wybrana tabela > View Data` - mozna podejrzeć dane tak jak w SSMS
 8. Do lokalnej bazy danych można się też dostać za pomocą SSMS, ale nie przerabialiśmy tego
 9. Można też eksportować bazę danych z `SQL Server Object Explorer (SSOE)` do `SQL Server Managment Studio (SSMS)`
-10. `C:\Users\<użytkownik>\<baza>.mdf` - (SQL Server Database Primary Data File) plik do lokalnej bazy danych. Plik `<baza>.ldf` (SQL Server Database Transaction Log File) 
+10. `C:\Users\<użytkownik>\<baza>.mdf` - (SQL Server Database Primary Data File) plik do lokalnej bazy danych. Plik `<baza>.ldf` (SQL Server Database Transaction Log File) zawiera logi bazy danych i nie trzeba go eksportować.
+11. Podłączenie SSMS do lokalnej bazy danych
+    1. `Serwer type > Database Engine` - wybór rodzaju bazy danych
+    2. `Server name > (localdb)\MSSQLLocalDB` - wybór lokalnej bazy danych
+       - `'C:\Program Files\Microsoft SQL Server\130\Tools\Binn\SqlLocalDB.exe' info mssqllocaldb` - uruchomienie tej komendy z terminala wyświetli info o lokalnej bazie danych. `Instance pipe name: np:\\.\pipe\LOCALDB#25058595\tsql\query` `np:\\` można alternatywnie podać w `Server name`
+    3. `Connect` - podłaczenie się do lokalnej bazy danych
+12. Przegląd logów LocalDB/SQLEXPRESS
+    1. `Management > SQL Server Logs` - przegląd bazy danych
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Elementy projektu
+
+#### Edycja na jednej stronie z tabelą
+
+![Edycja na jednej stronie](docs/edycja-na-jednej-stronie.png)
+![Info po najechaniu](docs/info-po-najechaniu.png)
+
+1. Modul filtrowania
+2. Moduł tabeli
+3. Moduł edycji z wieloma zakładkami
+4. Ładne przyciski z różnymi kolorami i brakiem aktywności
+5. Ładne inputy
+
+#### Bogate filtrowanie
+
+![Bogate filtrowanie](docs/bogate-filtrowanie.png)
+
+1. Na górze strony pojawia się info o wybranych filtrach
+
+#### Dziedziczenie widoków
+
+1. Mrówki generują bardzo dużo powtarzalnego kodu
+2. Najlepiej byłoby stworzyć DatabaseController, z którego mogą dziedziczyć pozostałem kontrolery i cały dublujący się kod we wszystkich kontrolerach będzie tam.
+3. Odpowiednikami  kontrolerów w desktopach są ViewModels w internetowych
+4. W internetowych jeden kontroler odpowiada za wiele widoków, każda funkcja i przycisk to inny widok
+5. Można też zastosować pewne dziedziczenia na Views, jeśli będą wspólne elementy.
+6. Można też pójść w kierunku, że jeden Views wyświetla dowolne źródło danych, czyli wszystkie widoki. Toki wspólny widok można użyć do tabel słownikowych.
+7. W widokach generowanych automatycznie można zastosować gotowe kontrolki, które będą o wiele ciekawsze niż te defaultowe np. do wyświetlania list.
+
+#### Wstrzykiwanie zależności
+
+1. Kolejnym ulepszeniem może być wzorzec projektowy Wstrzykiwanie Zależności (Dependency Injection), ale to ma być na mobilnych
