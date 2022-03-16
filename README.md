@@ -221,3 +221,8 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 5. Można też zastosować pewne dziedziczenia na Views, jeśli będą wspólne elementy.
 6. Można też pójść w kierunku, że jeden Views wyświetla dowolne źródło danych, czyli wszystkie widoki. Toki wspólny widok można użyć do tabel słownikowych.
 7. W widokach generowanych automatycznie można zastosować gotowe kontrolki, które będą o wiele ciekawsze niż te defaultowe np. do wyświetlania list.
+
+#### feat: 
+
+1. `Views > Shared > _Layout.cshtml` - zmieniamy sekcję nawigacyjną strony by dodać linki do utworzonych wcześniej widoków
+2. Dokonaj
