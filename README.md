@@ -190,7 +190,7 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
    3. `Views` - wszystko zostawione domyślnie, czyli pola wyboru 3x zaznazone i pusty input pod spodem
    4. `Controller name` - `AktualnoscController` bez "s", ale nazwa dowolna. "s" dodawane jest automatycznie by podreślić liczbę mnogą w ankielskim.
 2. `Views > Aktualnosc` - Widoki należy robić dedykowane i zmienić kod wygenerowany automatycznie
-3. Zalecane jest w AktualnoscController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBaseController
+3. Zalecane jest w AktualnoscController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBasebontroller
 
 #### feat: utworz kontrolery klas Strona.cs
 
@@ -200,7 +200,7 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
    3. `Views` - wszystko zostawione domyślnie, czyli pola wyboru 3x zaznazone i pusty input pod spodem
    4. `Controller name` - `AktualnoscController` bez "s", ale nazwa dowolna. "s" dodawane jest automatycznie by podreślić liczbę mnogą w ankielskim.
 2. `Views > Nazwa kontrolera` - Widoki należy robić dedykowane i zmienić kod wygenerowany automatycznie
-3. Zalecane jest w NazwaKontroleraController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBaseController
+3. Zalecane jest w NazwaKontroleraController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBasebontroller
 
 #### feat: utworz kontrolery klas Parametr.cs
 
@@ -210,4 +210,14 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
    3. `Views` - wszystko zostawione domyślnie, czyli pola wyboru 3x zaznazone i pusty input pod spodem
    4. `Controller name` - `AktualnoscController` bez "s", ale nazwa dowolna. "s" dodawane jest automatycznie by podreślić liczbę mnogą w ankielskim.
 2. `Views > Nazwa kontrolera` - Widoki należy robić dedykowane i zmienić kod wygenerowany automatycznie
-3. Zalecane jest w NazwaKontroleraController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBaseController
+3. Zalecane jest w NazwaKontroleraController.cs zrobić dziedziczenie tak jak było na Desktopach i aby dziedziczyły po DateBasebontroller
+
+#### docs: dodaj informacje o mozliwych ulepszeniach kodu w README.md
+
+1. Mrówki generują bardzo dużo powtarzalnego kodu
+2. Najlepiej byłoby stworzyć DatabaseController, z którego mogą dziedziczyć pozostałem kontrolery i cały dublujący się kod we wszystkich kontrolerach będzie tam.
+3. Odpowiednikami  kontrolerów w desktopach są ViewModels w internetowych
+4. W internetowych jeden kontroler odpowiada za wiele widoków, każda funkcja i przycisk to inny widok
+5. Można też zastosować pewne dziedziczenia na Views, jeśli będą wspólne elementy.
+6. Można też pójść w kierunku, że jeden Views wyświetla dowolne źródło danych, czyli wszystkie widoki. Toki wspólny widok można użyć do tabel słownikowych.
+7. W widokach generowanych automatycznie można zastosować gotowe kontrolki, które będą o wiele ciekawsze niż te defaultowe np. do wyświetlania list.
