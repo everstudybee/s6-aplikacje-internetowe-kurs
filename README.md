@@ -222,7 +222,16 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 6. Można też pójść w kierunku, że jeden Views wyświetla dowolne źródło danych, czyli wszystkie widoki. Toki wspólny widok można użyć do tabel słownikowych.
 7. W widokach generowanych automatycznie można zastosować gotowe kontrolki, które będą o wiele ciekawsze niż te defaultowe np. do wyświetlania list.
 
-#### feat: 
+#### feat: dodaj linki do nowych stron do pliku _Layout.cshtml
 
 1. `Views > Shared > _Layout.cshtml` - zmieniamy sekcję nawigacyjną strony by dodać linki do utworzonych wcześniej widoków
-2. Dokonaj
+2. Dokonaj kompilacji
+
+#### feat: wykonaj w konsoli NuGet polecenie add-migration initialcreate
+
+1. `Data > FirmaIntranetContext.cs` - główna klasa odpowiedzialna za zarządzanie bazą danych, każdy nowy Model jest tu dopisywany i tworzony jest z niego nowy DbSet
+2. `appsettings.json` - został utworzony wpis, który definiuje bazę danych, ale w tym momencie baza jeszcze nie jest utworzona
+3. `Tools > NuGet Package Manager > Package Manager Console` - wejdź do konsoli
+4. Ustaw odpowiedni projekt w konsoli
+5. `Add-Migration InitialCreate` - podajemy to polecenie w konsoli dla wybranego projektu
+6. Zostanie utworzony plik migracyjny
