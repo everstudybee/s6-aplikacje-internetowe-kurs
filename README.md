@@ -280,10 +280,17 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 13. Wejdź do wszystkich widoków w projekcie `Firma.Intranet` i zmień nagłówek `@model` na zgodny z projektem `Firma.Data`
 14. `Firma.Intranet > Program.cs > linia 8 > GetConnectionString` zmieniamy na `FirmaContext` 
 15. `Firma.Intranet > appsettings.json > linia 10` należy zmienić `"FirmaIntranetContext"` na `"FirmaContext"`
+16. Zmiana nazwy bazy danych
+    1. `Firma.Intranet > appsettings.json > linia 10` zmień nazwę bazy danych na docelową
+    2. `SSMS > Dodaj nową bazę` ustaw nazwę na taką samą jak w `Firma.Intranet`
+    3. Zrób backup dotychczasowej bazy danych
+    4. Plik z backupem poprzedniej bazy odtwórz w nowej bazie, [How can I clone an SQL Server database](https://stackoverflow.com/a/26265624)
 
+#### feat: 
 
-
-
+1. `Firma.Data > Data` dodaj folder `Sklep`
+2. `Sklep` dadaj klasy `Rodzaj.cs` i `Towar.cs`
+3. W nowych klasach zmieniamy `internal` na `public`
 
 
 
