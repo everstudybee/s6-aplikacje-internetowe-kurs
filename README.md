@@ -286,11 +286,14 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
     3. Zrób backup dotychczasowej bazy danych
     4. Plik z backupem poprzedniej bazy odtwórz w nowej bazie, [How can I clone an SQL Server database](https://stackoverflow.com/a/26265624)
 
-#### feat: 
+#### feat: dodaj klasy Rodzaj.cs i Towar.cs do Firma.Data
 
 1. `Firma.Data > Data` dodaj folder `Sklep`
 2. `Sklep` dadaj klasy `Rodzaj.cs` i `Towar.cs`
 3. W nowych klasach zmieniamy `internal` na `public`
+4. Dodaj odpowiednie properies do nowych klas
+
+
 
 
 
