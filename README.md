@@ -256,10 +256,30 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 ## bm3-obsluga-bazy-danych
 
+#### feat: utworz nowy projekt dla wspolnej bazy danych
+
+1. `PPM na Solucji > Add > New project` - do solucji dodaj nowy projekt `Class Library`
+   - wyszukaj odpowiedni template projektu
+   - ![Class Library](docs/class-library.png)
+2. Od wersji .NET 5 zniknął dopisek Core z nazwy [.NET Wiki](https://en.wikipedia.org/wiki/.NET)
+
 #### refactor: wydziel baze danych do oddzielnego projektu
 
 1. Wydziel bazę danych do oddzielnego projektu tak by wszystkie projekty z solucji korzystały z tego samego projektu bazy danych
-2. `PPM na Solucji > Add > New project` do solucji dodaj nowy projekt
+2. `PPM na Firma.Data > Add > New Folder > Data` - w projekcie bazy danych dodaj nowy folder
+3. Z projektu `Firma.Data` wykasować domyślnie utworzoną klasę
+4. `PPM na Data > Add > New Folder > CMS` - dodać kolejny podfolder
+5. `PPM na CMS > Add > Class` - dodajemy trzy klasy o nazwach takich samych jak w `Firma.Intranet > Models > CMS`. Treść tych klas ma być taka sama.
+6. W nowych klasach zmieniamy `internal` na `public`
+7. `PPM na Data > Add > New Class > FrimaContext.cs` - dodać klasę, która będzie zawierała to samo co `Firma.Intranet > Data > FirmaIntranetContext.cs`
+8. w `FrimaContext.cs` dodaj dziedziczenie po DbContext i następnie `PPM na DbContext > Quick Actions and Refactorings > Install package 'MicrosoftEntityFrameworkCore' > Install with package manager > wybrać Latest stable 6.0.2`
+9. Zrobić `Rebuild` projektu `Firma.Data`
+10. W projekcie `Firma.Intranet` wykasuj foldery `Data`, `Migrations`, `CMS` z ich zawartością
+11. `Firma.Intranet > Add Project Reference > Solution > Firma.Data` - dadajemy do projektu `Firma.Intranet` zależność do projektu `Firma.Data`
+12. Recompilujemy cały projekt i pokolei klikamy wszystkie błędy i dodajemy odpowienie `using` oraz zminiamy nazwy klas na zgodne z `Firma.Data`
+13. Wejdź do wszystkich widoków w projekcie `Firma.Intranet` i zmień nagłówek `@model` na zgodny z projektem `Firma.Data`
+14. `Firma.Intranet > Program.cs > linia 8 > GetConnectionString` zmieniamy na `FirmaContext` 
+15. `Firma.Intranet > appsettings.json > linia 10` należy zmienić `"FirmaIntranetContext"` na `"FirmaContext"`
 
 
 
@@ -269,11 +289,9 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 
 
-
-
-
-
-
+---
+---
+---
 
 ## Elementy projektu
 

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Firma.Intranet.Models.CMS
+namespace Firma.Data.Data.CMS
 {
     public class Parametr
     {
