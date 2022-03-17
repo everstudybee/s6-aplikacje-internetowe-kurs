@@ -1,0 +1,12 @@
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\bin\Debug\net6.0\Firma.Data.deps.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\bin\Debug\net6.0\Firma.Data.dll
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\bin\Debug\net6.0\Firma.Data.pdb
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.csproj.AssemblyReference.cache
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.AssemblyInfoInputs.cache
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.AssemblyInfo.cs
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.csproj.CoreCompileInputs.cache
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.dll
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\refint\Firma.Data.dll
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\Firma.Data.pdb
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.Data\obj\Debug\net6.0\ref\Firma.Data.dll

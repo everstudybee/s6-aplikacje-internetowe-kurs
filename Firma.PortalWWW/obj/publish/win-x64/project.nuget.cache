@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "4zFY6sq4g6eAhRspLsYZBmLV23NuSLP/GT1m6fRFpw86weQDrc6Zwtv8EDQ6ojg/nzWZXCA5bK6vBOQt5/466Q==",
+  "success": true,
+  "projectFilePath": "C:\\_code\\studia\\semestr-6\\aplikacje-internetowe\\s6-aplikacje-internetowe-kurs\\Firma.PortalWWW\\Firma.PortalWWW.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.2\\microsoft.netcore.app.runtime.win-x64.6.0.2.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.2\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.2.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.2\\microsoft.aspnetcore.app.runtime.win-x64.6.0.2.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.2\\microsoft.netcore.app.crossgen2.win-x64.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,7 @@
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\Firma.PortalWWW.exe
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\Firma.PortalWWW.dll
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\Firma.PortalWWW.deps.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\Firma.PortalWWW.runtimeconfig.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\PubTmp\Out\Firma.PortalWWW.pdb

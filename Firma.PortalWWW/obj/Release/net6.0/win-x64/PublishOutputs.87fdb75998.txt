@@ -1,0 +1,5 @@
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\win-x64\PubTmp\Out\appsettings.Development.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\win-x64\PubTmp\Out\appsettings.json
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\win-x64\PubTmp\Out\Firma.PortalWWW.pdb
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\win-x64\PubTmp\Out\aspnetcorev2_inprocess.dll
+C:\_code\studia\semestr-6\aplikacje-internetowe\s6-aplikacje-internetowe-kurs\Firma.PortalWWW\obj\Release\net6.0\win-x64\PubTmp\Out\Firma.PortalWWW.exe
