@@ -1,6 +1,8 @@
 ﻿# Programowanie internetowych aplikacji biznesowych
 
-Opis: Semestr 6, mgr Artur Kornatka  
+Opis: Semestr 6, mgr Artur Kornatka   
+[Projekt na GitHub](https://github.com/kzrepo/s6-aplikacje-internetowe-kurs)
+
 
 ## Założenia
 
@@ -55,6 +57,8 @@ Podejście do tworzenia bazy danych
 2. [Development Approaches with Entity Framework](https://www.javatpoint.com/development-approaches-with-entity-framework)
 2. [Code-First Approach With ASP.NET MVC Framework](https://www.c-sharpcorner.com/article/code-first-approach-with-asp-net-mvc-framework/)
 
+
+
 ## bn1-proste-przyklady
 
 #### Znaczniki html w ASP.NET Core
@@ -89,6 +93,7 @@ Podejście do tworzenia bazy danych
    - `Views > Shared > _Layout.cshtml` - szablon domyślny dla wszystkich stron
    - `wwwroot > css > site.css` - główny plik styli CSS
    - `Controllers > HomeController.cs > funkcja Index()` - główny kontroler sterujący widokiem `Index.cshtml`
+
 
 
 ## bm1-aplikacja-od-poczatku
@@ -148,6 +153,8 @@ Podejście do tworzenia bazy danych
 2. Dodaj `Card Panel` do `About.cshtml` [Card Panel](https://materializecss.com/cards.html)
 3. Dodaj `FABs in Cards` do `Privacy.cshtml` [Card Panel](https://materializecss.com/cards.html)
 4. Dodaj `Card Reveal` do `Contact.cshtml` [Card Panel](https://materializecss.com/cards.html)
+
+
 
 ## bm2-prosty-cms
 
@@ -247,6 +254,32 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
     1. `Management > SQL Server Logs` - przegląd bazy danych
 
 
+## bm3-obsluga-bazy-danych
+
+#### feat: utworz nowy projekt dla wspolnej bazy danych
+
+1. `PPM na Solucji > Add > New project` - do solucji dodaj nowy projekt `Class Library`
+   - wyszukaj odpowiedni template projektu
+   - ![Class Library](docs/class-library.png)
+2. Od wersji .NET 5 zniknął dopisek Core z nazwy [.NET Wiki](https://en.wikipedia.org/wiki/.NET)
+
+#### refactor: wydziel baze danych do oddzielnego projektu
+
+1. Wydziel bazę danych do oddzielnego projektu tak by wszystkie projekty z solucji korzystały z tego samego projektu bazy danych
+2. `PPM na Firma.Data > Add > New Folder > Data` - w projekcie bazy danych dodaj nowy folder
+3. Z projektu `Firma.Data` wykasować domyślnie utworzoną klasę
+4. `PPM na Data > Add > New Folder > CMS` - dodać kolejny podfolder
+5. `PPM na CMS > Add > Class` - dodajemy trzy klasy o nazwach takich samych jak w `Firma.Intranet > Models > CMS`. Treść tych klas ma być taka sama.
+6. W nowych klasach zmieniamy `internal` na `public`
+7. `PPM na Data > Add > New Class > FrimaContext.cs` - dodać klasę, która będzie zawierała to samo co `Firma.Intranet > Data > FirmaIntranetContext.cs`
+8. w `FrimaContext.cs` dodaj dziedziczenie po DbContext i następnie `PPM na DbContext > Quick Actions and Refactorings > Install package 'MicrosoftEntityFrameworkCore' > Install with package manager > wybrać Latest stable 6.0.2`
+9. Zrobić `Rebuild` projektu `Firma.Data`
+10. W projekcie `Firma.Intranet` wykasuj foldery `Data`, `Migrations`, `CMS` z ich zawartością
+11. `Firma.Intranet > Add Project Reference > Solution > Firma.Data` - dadajemy do projektu `Firma.Intranet` zależność do projektu `Firma.Data`
+12. Recompilujemy cały projekt i pokolei klikamy wszystkie błędy i dodajemy odpowienie `using` oraz zminiamy nazwy klas na zgodne z `Firma.Data`
+13. Wejdź do wszystkich widoków w projekcie `Firma.Intranet` i zmień nagłówek `@model` na zgodny z projektem `Firma.Data`
+14. `Firma.Intranet > Program.cs > linia 8 > GetConnectionString` zmieniamy na `FirmaContext` 
+15. `Firma.Intranet > appsettings.json > linia 10` należy zmienić `"FirmaIntranetContext"` na `"FirmaContext"`
 
 
 
@@ -256,12 +289,9 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 
 
-
-
-
-
-
-
+---
+---
+---
 
 ## Elementy projektu
 

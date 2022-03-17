@@ -1,29 +1,29 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Firma.Intranet.Models.CMS
+namespace Firma.Data.Data.CMS
 {
-    public class Strona
+    public class Aktualnosc
     {
         [Key]
-        public int IdStrony { get; set; }
+        public int IdAktualnosci { get; set; }
 
-        [Required(ErrorMessage = "Wpisz tytuł odnośnika")]
-        [MaxLength(10, ErrorMessage = "Tytuł powinien zawierać max. 10 znaków")]
-        [Display(Name = "Tytuł odnośnika")]
-        public string LinkTytulu { get; set; }
+        [Required(ErrorMessage = "Wpisz tytuł odnośnika do aktualności")]
+        [MaxLength(10, ErrorMessage = "Tytuł powinien zawierać max 10 znaków")]
+        [Display(Name = "Tytuł odnośnika aktualności")]
+        public string LinkTytul { get; set; }
 
-        [Required(ErrorMessage = "Wpisz tytuł strony")]
-        [MaxLength(30, ErrorMessage = "Tytuł strony powinien zawierać max. 30 znaków")]
-        [Display(Name = "Tytuł strony")]
+        [Required(ErrorMessage = "Wpisz tytuł aktualności")]
+        [MaxLength(30, ErrorMessage = "Tytuł aktualności powinien zawierać max 30 znaków")]
+        [Display(Name = "Tytuł aktualności")]
         public string Tytul { get; set; }
 
-        [Display(Name = "Treść")]
+        [Display(Name = "Treść aktualności")]
         [Column(TypeName = "nvarchar(MAX)")]
         public string Tresc { get; set; }
 
+        [Display(Name = "Pozycja wyświetlania aktualności")]
         [Required(ErrorMessage = "Pozycja jest wymagana")]
-        [Display(Name = "Pozycja wyświetlania")]
         public int Pozycja { get; set; }
 
         // Pola dodatkowe, które powinny być w każdym projekcie

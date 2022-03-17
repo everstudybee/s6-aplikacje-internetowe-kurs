@@ -1,10 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Firma.Intranet.Data;
+﻿using Firma.Data.Data;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<FirmaIntranetContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FirmaIntranetContext")));
+builder.Services.AddDbContext<FirmaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FirmaContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
