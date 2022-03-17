@@ -1,6 +1,8 @@
 ﻿# Programowanie internetowych aplikacji biznesowych
 
-Opis: Semestr 6, mgr Artur Kornatka  
+Opis: Semestr 6, mgr Artur Kornatka   
+[Projekt na GitHub](https://github.com/kzrepo/s6-aplikacje-internetowe-kurs)
+
 
 ## Założenia
 
@@ -55,6 +57,8 @@ Podejście do tworzenia bazy danych
 2. [Development Approaches with Entity Framework](https://www.javatpoint.com/development-approaches-with-entity-framework)
 2. [Code-First Approach With ASP.NET MVC Framework](https://www.c-sharpcorner.com/article/code-first-approach-with-asp-net-mvc-framework/)
 
+
+
 ## bn1-proste-przyklady
 
 #### Znaczniki html w ASP.NET Core
@@ -89,6 +93,7 @@ Podejście do tworzenia bazy danych
    - `Views > Shared > _Layout.cshtml` - szablon domyślny dla wszystkich stron
    - `wwwroot > css > site.css` - główny plik styli CSS
    - `Controllers > HomeController.cs > funkcja Index()` - główny kontroler sterujący widokiem `Index.cshtml`
+
 
 
 ## bm1-aplikacja-od-poczatku
@@ -148,6 +153,8 @@ Podejście do tworzenia bazy danych
 2. Dodaj `Card Panel` do `About.cshtml` [Card Panel](https://materializecss.com/cards.html)
 3. Dodaj `FABs in Cards` do `Privacy.cshtml` [Card Panel](https://materializecss.com/cards.html)
 4. Dodaj `Card Reveal` do `Contact.cshtml` [Card Panel](https://materializecss.com/cards.html)
+
+
 
 ## bm2-prosty-cms
 
@@ -247,7 +254,12 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
     1. `Management > SQL Server Logs` - przegląd bazy danych
 
 
+## bm3-obsluga-bazy-danych
 
+#### refactor: wydziel baze danych do oddzielnego projektu
+
+1. Wydziel bazę danych do oddzielnego projektu tak by wszystkie projekty z solucji korzystały z tego samego projektu bazy danych
+2. `PPM na Solucji > Add > New project` do solucji dodaj nowy projekt
 
 
 

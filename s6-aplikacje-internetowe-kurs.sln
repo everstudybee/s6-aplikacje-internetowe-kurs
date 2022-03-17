@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.PortalWWW", "Firma.PortalWWW\Firma.PortalWWW.csproj", "{25E209D0-41E6-4556-B780-93890BFD9101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firma.PortalWWW", "Firma.PortalWWW\Firma.PortalWWW.csproj", "{25E209D0-41E6-4556-B780-93890BFD9101}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.Intranet", "Firma.Intranet\Firma.Intranet.csproj", "{8E4B602A-FFA1-40F2-A356-0D74382C014F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firma.Intranet", "Firma.Intranet\Firma.Intranet.csproj", "{8E4B602A-FFA1-40F2-A356-0D74382C014F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.Data", "Firma.Data\Firma.Data.csproj", "{8871D641-0338-402C-85C1-C5441B662491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8E4B602A-FFA1-40F2-A356-0D74382C014F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E4B602A-FFA1-40F2-A356-0D74382C014F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E4B602A-FFA1-40F2-A356-0D74382C014F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8871D641-0338-402C-85C1-C5441B662491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8871D641-0338-402C-85C1-C5441B662491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8871D641-0338-402C-85C1-C5441B662491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8871D641-0338-402C-85C1-C5441B662491}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
