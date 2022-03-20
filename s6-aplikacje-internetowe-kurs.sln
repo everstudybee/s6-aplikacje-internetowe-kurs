@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firma.PortalWWW", "Firma.Po
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firma.Intranet", "Firma.Intranet\Firma.Intranet.csproj", "{8E4B602A-FFA1-40F2-A356-0D74382C014F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma.Data", "Firma.Data\Firma.Data.csproj", "{8871D641-0338-402C-85C1-C5441B662491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firma.Data", "Firma.Data\Firma.Data.csproj", "{8871D641-0338-402C-85C1-C5441B662491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
