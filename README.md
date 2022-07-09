@@ -310,6 +310,19 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 8. `Add-Migration InitialCreate` utworzenie migracji z nazwą `InitialCreate`
 9. `Update-database` tworzy bazę danych
 
+### feat: dodaj zarzadzanie trescia Frima.PortalWWW z Firma.Intranet
+
+1. Działaj na projekcie Firma.PortalWWW
+2. Zamień odnośniki w menu na `PartialView` i pobieraj je z bazy danych tabela `Strona`
+3. `ConnectionStrings` do bazy danych skopiować z projektu `Firma.Intranet`
+4. Dodać `Firma.Data` jako Dependencies w `Firma.PortalWWW`
+5. W `Program.cs` dodać bindowanie bazy, skopiować z `Firma.Intranet`
+
+### feat: dodaj PartialView 
+
+1. `PartialView` to część widoku, który może być osadzony w innym widoku
+
+
 
 ---
 ---
