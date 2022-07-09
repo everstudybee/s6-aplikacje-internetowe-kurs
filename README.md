@@ -298,6 +298,17 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 1. https://docs.microsoft.com/pl-pl/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key#foreign-key
 
+### feat: migruj baze danych wspolna dla Firma.Intranet i Firma.PortalWWW
+
+1. Działaj na projekcie Firma.Data
+2. `Firma.Data > Rebuild`
+3. `Firma.Data > Dependencies > NuGet`
+4. Zainstaluj `Microsoft.EntityFrameworkCore.Relational` w takiej samej wersji jak `Microsoft.EntityFrameworkCore`
+5. Zainstaluj `Microsoft.EntityFrameworkCore.SqlServer` w takiej samej wersji jak `Microsoft.EntityFrameworkCore`
+6. Migrację uruchamiamy z `Firma.Intranet > Set as Startup Project` bo tam jest skonfigurowany `ConnectionStrings` do bazy danych
+7. `PMC > Firma.Data`
+8. `Add-Migration InitialCreate` utworzenie migracji z nazwą `InitialCreate`
+9. `Update-database` tworzy bazę danych
 
 
 ---
