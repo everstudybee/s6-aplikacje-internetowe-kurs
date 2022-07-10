@@ -90,7 +90,7 @@ namespace Firma.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdStrony"), 1L, 1);
 
-                    b.Property<string>("LinkTytulu")
+                    b.Property<string>("LinkTytul")
                         .IsRequired()
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");

@@ -60,7 +60,7 @@ namespace Firma.Data.Migrations
                 {
                     IdStrony = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    LinkTytulu = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    LinkTytul = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Tytul = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Tresc = table.Column<string>(type: "nvarchar(MAX)", nullable: false),
                     Pozycja = table.Column<int>(type: "int", nullable: false)

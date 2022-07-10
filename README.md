@@ -312,15 +312,23 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 ### feat: dodaj zarzadzanie trescia Frima.PortalWWW z Firma.Intranet
 
-1. Działaj na projekcie Firma.PortalWWW
+1. Działaj na projekcie `Firma.PortalWWW`
 2. Zamień odnośniki w menu na `PartialView` i pobieraj je z bazy danych tabela `Strona`
 3. `ConnectionStrings` do bazy danych skopiować z projektu `Firma.Intranet`
 4. Dodać `Firma.Data` jako Dependencies w `Firma.PortalWWW`
 5. W `Program.cs` dodać bindowanie bazy, skopiować z `Firma.Intranet`
 
-### feat: dodaj PartialView 
+### feat: dodaj PartialView odnosniki
 
-1. `PartialView` to część widoku, który może być osadzony w innym widoku
+1. Działaj na projekcie `Firma.PortalWWW`
+2. `PartialView` to część widoku, który może być osadzony w innym widoku
+3. `Views > Shared > Add > View > Razor View`  
+    1. View name: Odnosniki
+    2. Template: Empty (without model)
+    3. Create as a partial view
+    4. Reszta baz zmian
+
+
 
 
 
