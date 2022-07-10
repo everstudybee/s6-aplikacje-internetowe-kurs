@@ -15,7 +15,7 @@ namespace Firma.PortalWWW.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
             // ViewBag lub ViewData to taki listonosz, który przenosi dane pomiędzy kontrolerem a widokiem
             ViewBag.ModelStrony =
@@ -24,14 +24,21 @@ namespace Firma.PortalWWW.Controllers
                 orderby strona.Pozycja
                 select strona
             ).ToList();
-
+             
             ViewBag.ModelAktualnosci = (
                 from aktualnosc in _context.Aktualnosc
                 orderby aktualnosc.Pozycja
                 select aktualnosc
             ).ToList();
 
-            return View();
+            if (id == null)
+                //przekazuję pierwszą stronę, gdy id jest null
+                //dlatego "Strona główna" i pierwszy generowany link wskazują na tę samą stronę
+                id = _context.Strona.First().IdStrony;
+            var item = _context.Strona.Find(id);
+
+            // item może być typu do którego przekażę wiele różnych danych
+            return View(item); 
         }
 
         public IActionResult Privacy()

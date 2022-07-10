@@ -342,6 +342,11 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 5. Dodać `Aktualnosci.cshtml` do Index.cshtml jako `PartialView`
 6. Dodać w `HomeController.cs` pobieranie danych z Firma.Data.
 
+### feat: dodaj tresc kazdej podstrony z bazy danych
+
+<h2 class="movie">W5 - 2022-04-03</h2>
+
+
 
 
 
