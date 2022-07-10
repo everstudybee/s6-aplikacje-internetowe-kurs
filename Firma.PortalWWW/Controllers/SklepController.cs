@@ -33,4 +33,14 @@ public class SklepController : Controller
         return View(await _context.Towar.Where(t => t.IdRodzaju == id)
             .ToListAsync());
     }
+
+    //wyświetla szczegóły klikniętego towaru i id nie może być puste
+    public async Task<IActionResult> Szczegoly(int id)
+    {
+        ViewBag.ModelRodzaje = await _context.Rodzaj.ToListAsync();
+
+        //do widoku przekazuję ten towar który kliknięto
+        return View(await _context.Towar.Where(t => t.IdTowaru == id)
+            .FirstOrDefaultAsync());
+    }
 }

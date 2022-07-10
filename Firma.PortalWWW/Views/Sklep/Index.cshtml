@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Firma.Data.Data.Sklep.Towar>
 
-    @{
-        ViewData["Title"] = "Sklep";
-        Layout = "_SklepLayout";
-    }
-    
+@{
+    ViewData["Title"] = "Sklep";
+    Layout = "~/Views/Shared/_SklepLayout.cshtml";
+}
+
 <div>
     <table>
         <thead>
@@ -19,7 +19,7 @@
         {
             <tr>
                 <td>@towar.Foto</td>
-                <td>@towar.Nazwa</td>
+                <td><a class="nav-link text-dark" asp-controller="Sklep" asp-action="Szczegoly" asp-route-id="@towar.IdTowaru">@towar.Nazwa</a></td>
                 <td>@towar.Cena.ToString("0.00")</td>
             </tr>
         }

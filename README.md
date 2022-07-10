@@ -366,6 +366,23 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 1. `Sklep > Index.cshtml` dostosowujemy widok do wyświetlania produktów.
 2. `Chrome > F12 > Zakładka Lighthouse` audyt strony
 
+### feat: wyswietl szczegoly towaru
+
+1. Działaj na projekcie `Firma.PortalWWW`
+2. Edytuj `SklepController.cs` i dodaj funckję szczegóły, która wystawi dane widokowi
+3. `SklepController.cs > Szczegoly > PPM > Add View > Razor View - Empty > Index.cshtml` tworzy widok do kontrolera.
+
+<h2 class="movie">L2 - 2022-04-24</h2>
+
+## TECHNOLOGIA ALTERNATYWNA DLA PARTIAL VIEW - COMPONENTS
+
+### 
+
+
+
+
+
+<h2 class="movie">L3 - 2022-04-24</h2>
 
 
 

@@ -1,0 +1,19 @@
+﻿@model Firma.Data.Data.Sklep.Towar
+
+@{
+    ViewData["Title"] = "Szczegoly";
+    Layout = "~/Views/Shared/_SklepLayout.cshtml";
+}
+
+<div>
+    @Model.Foto
+</div>
+<div>
+    @Model.Nazwa
+</div>
+<div>
+    Cena: @Model.Cena.ToString("0.00")
+</div>
+<div>
+    @Model.Opis
+</div>
