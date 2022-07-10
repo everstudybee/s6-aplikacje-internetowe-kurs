@@ -5,4 +5,24 @@
         Layout = "_SklepLayout";
     }
     
-    <div>Tu będzie wyświetlanie towarów danej kategorii</div>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Foto</th>
+            <th>Nazwa</th>
+            <th>Cena</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var towar in Model)
+        {
+            <tr>
+                <td>@towar.Foto</td>
+                <td>@towar.Nazwa</td>
+                <td>@towar.Cena.ToString("0.00")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

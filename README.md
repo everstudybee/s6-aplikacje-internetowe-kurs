@@ -361,6 +361,13 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
     4. Reszta baz zmian
 6. `RodzajeMenu.cshtml` wzorowany jest na `Odnosniki.cshtml`
 
+### feat: wyswietlaj produkty powiazane z kategoria
+
+1. `Sklep > Index.cshtml` dostosowujemy widok do wyświetlania produktów.
+2. `Chrome > F12 > Zakładka Lighthouse` audyt strony
+
+
+
 
 
 ---
