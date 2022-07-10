@@ -318,7 +318,7 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 4. Dodać `Firma.Data` jako Dependencies w `Firma.PortalWWW`
 5. W `Program.cs` dodać bindowanie bazy, skopiować z `Firma.Intranet`
 
-### feat: dodaj PartialView odnosniki
+### feat: dodaj PartialView Odnosniki
 
 1. Działaj na projekcie `Firma.PortalWWW`
 2. `PartialView` to część widoku, który może być osadzony w innym widoku
@@ -327,7 +327,20 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
     2. Template: Empty (without model)
     3. Create as a partial view
     4. Reszta baz zmian
+4. Z `_Layout.cshtml` wyciąć fragment odpowiedzialny za generowanie menu i wkleić go do `Odnosniki.cshtml`
 
+### feat: dodaj PartialView Aktualnosci
+
+1. Działaj na projekcie `Firma.PortalWWW`
+2. `PartialView` to część widoku, który może być osadzony w innym widoku
+3. `Views > Shared > Add > View > Razor View`  
+    1. View name: Aktualnosci
+    2. Template: Empty (without model)
+    3. Create as a partial view
+    4. Reszta baz zmian
+4. Z `Index.cshtml` wyciąć fragment odpowiedzialny za generowanie Aktualnosci i wkleić go do `Aktualnosci.cshtml`
+5. Dodać `Aktualnosci.cshtml` do Index.cshtml jako `PartialView`
+6. Dodać w `HomeController.cs` pobieranie danych z Firma.Data.
 
 
 

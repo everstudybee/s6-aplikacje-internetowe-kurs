@@ -24,6 +24,13 @@ namespace Firma.PortalWWW.Controllers
                 orderby strona.Pozycja
                 select strona
             ).ToList();
+
+            ViewBag.ModelAktualnosci = (
+                from aktualnosc in _context.Aktualnosc
+                orderby aktualnosc.Pozycja
+                select aktualnosc
+            ).ToList();
+
             return View();
         }
 
