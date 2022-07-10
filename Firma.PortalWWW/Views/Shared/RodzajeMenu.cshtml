@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Firma.Data.Data.CMS.Strona>
+﻿@model IEnumerable<Firma.Data.Data.Sklep.Rodzaj>
 
 <div class="nav-wrapper container">
     <a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -6,11 +6,8 @@
         <li>@Html.ActionLink("Strona główna", "Index", "Home")</li>
         @foreach (var item in Model)
         {
-            @*<li>@Html.ActionLink(item.LinkTytul, "Index", "Home", new { id = item.IdStrony }, null)</li>*@
-            @*wersję poniżej łatwiej stylować*@
-            <li><a class="nav-link text-dark" asp-controller="Home" asp-action="Index" asp-route-id="@item.IdStrony">@item.LinkTytul</a></li>
+            <li><a class="nav-link text-dark" asp-controller="Sklep" asp-action="Index" asp-route-id="@item.IdRodzaju">@item.Nazwa</a></li>
         }
-        <li><a class="nav-link text-dark" asp-controller="Sklep" asp-action="Index">Sklep Internetowy</a></li>
     </ul>
 
     <ul id="nav-mobile" class="sidenav">

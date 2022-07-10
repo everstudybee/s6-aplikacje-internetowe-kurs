@@ -54,7 +54,7 @@ Podejście do tworzenia bazy danych
 
 <h2 class="movie">W1 - 2022-02-20</h2>
 
-## Przykładowy projekt bez MVC
+## PPRZYKŁADOWY PROJEKT BEZ MVC
 
 ### Znaczniki HTML w ASP.NET Core
 
@@ -91,7 +91,7 @@ Podejście do tworzenia bazy danych
 
 <h2 class="movie">W2 - 2022-02-20</h2>
 
-## Solucja od początku. Rozwój projektu Firma.PortalWWW
+## SOLUCJA OD POCZĄTKU. ROZWÓJ PRJEKTU Firma.PortalWWW
 
 ### feat: przygotuj nowa solucje z projektami
 
@@ -149,7 +149,7 @@ Podejście do tworzenia bazy danych
 3. Dodaj `FABs in Cards` do `Privacy.cshtml` [Card Panel](https://materializecss.com/cards.html)
 4. Dodaj `Card Reveal` do `Contact.cshtml` [Card Panel](https://materializecss.com/cards.html)
 
-## Rozwój projektu Firma.Intranet
+## ROZWÓJ PROJEKTU Firma.Intranet
 
 Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dziale [dokumentacja](#code-first).
 
@@ -250,7 +250,7 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 <h2 class="movie">W4 - 2022-03-06</h2>
 
-## Wydzielenie bazy do oddzielnego projektu Firma.Data
+## WYDZIEL BAZĘ DANYCH DO ODDZIELNEGO POJEKTU Firma.Data
 
 ### feat: utworz nowy projekt dla wspolnej bazy danych
 
@@ -283,7 +283,7 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
     3. Zrób backup dotychczasowej bazy danych
     4. Plik z backupem poprzedniej bazy odtwórz w nowej bazie, [How can I clone an SQL Server database](https://stackoverflow.com/a/26265624)
 
-## Utworzenie sklepu internetowego
+## UTWÓRZ PARTIAL VIEWS
 
 ### feat: dodaj klasy Rodzaj.cs i Towar.cs do Firma.Data
 
@@ -346,7 +346,20 @@ Bazę danych tworzymy w oparciu o podejście Code-First. Więcej informacji w dz
 
 <h2 class="movie">W5 - 2022-04-03</h2>
 
+## UTWÓRZ SKLEP INTERNETOWY
 
+### feat: zbuduj layout dla sklepu internetowego 
+
+1. Działaj na projekcie `Firma.PortalWWW`
+2. Stwórz `Shared > _SklepLayout.cshtml` pusty widok, skopiuj i dostosuj `_Layout.cshtml`
+3. Stwórz `Controllers > SklepController.cs` pusty kontroler i uzupełnij funkcję Index
+4. `SklepController.cs > Index > PPM > Add View > Razor View - Empty > Index.cshtml` tworzy widok do kontrolera.
+5. `Views > Shared > Add > View > Razor View`  
+    1. View name: RodzajeMenu
+    2. Template: Empty (without model)
+    3. Create as a partial view
+    4. Reszta baz zmian
+6. `RodzajeMenu.cshtml` wzorowany jest na `Odnosniki.cshtml`
 
 
 
